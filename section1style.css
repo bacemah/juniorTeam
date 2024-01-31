@@ -11,7 +11,6 @@
   --color-accent: #36454f;
   --color-tab: #faf9f6;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -34,9 +33,6 @@ body {
 p {
   color: #666;
 }
-
-/* Base Styles */
-
 .header__title {
   flex: 1;
   max-width: 100%;
@@ -142,7 +138,6 @@ h4 {
   margin: auto;
   padding: 2rem 0;
 }
-
 .categories__tab-container {
   display: flex;
   gap: 28rem;

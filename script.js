@@ -1,8 +1,10 @@
-/*const tabsContainer = document.querySelector(".categories__tab-container");
+const tabsContainer = document.querySelector(".categories__tab-container");
 const tabsContent = document.querySelectorAll(".categories__content");
 const tabs = document.querySelectorAll(".categories__tab");
 const sections = document.querySelectorAll(".section");
 const header = document.querySelector(".header");
+const buttons1 = document.querySelectorAll(".btn1");
+const test = document.querySelectorAll("div.category-btn");
 let currentTab = 0;
 const maxTab = tabs.length;
 
@@ -35,4 +37,21 @@ const sectionObserver = new IntersectionObserver(sectionObs, {
 sections.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add("section--hidden");
-});*/
+});
+const btnObs = function (entries) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) {
+    //entry.target.classList?.remove("position-sticky");
+    return;
+  }
+  console.log(entry);
+  entry.target.classList.add("position-sticky");
+};
+btnObs(buttons1);
+const buttonObserver = new IntersectionObserver(btnObs, {
+  root: null,
+  threshold: 0.3,
+});
+test.forEach(function (btn) {
+  buttonObserver.observe(btn);
+});
