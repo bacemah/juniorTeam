@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin-bottom: 40px;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d3d3d3;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: #333;
+    color: white;
+}
+
+.clothing-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+    padding: 20px;
+    max-width: 1200px; 
+    justify-items: center;
+}
+
+.clothing-item {
+    position: relative;
+    border: 2px solid #d3d3d3 ;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    background-color: #faf9f6;
+}
+
+.clothing-item:hover {
+    transform: scale(1.1);
+}
+
+.heart-icon {
+    position: absolute;
+    bottom: 115px;
+    left: 10%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    color: hsl(0, 43%, 54%);
+    cursor: pointer;
+}
+.heart-icon:hover{
+    color: hsl(0, 78%, 52%);
+
+}
+
+.clothing-item img {
+    width:  100% ;
+    height: 400px;
+    
+    
+}
+
+.colors {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.color {
+    width: 20px;
+    height: 20px;
+    margin: 0 4px;
+    border-radius: 20%;
+    border: 2px solid #333;
+    cursor: pointer;
+}
+
+.color.red { background-color: #ff0000; }
+.color.blue { background-color: #0000ff; }
+.color.green { background-color: #00ff00; }
+.color.black { background-color: #000000; }
+.color.gray { background-color: #808080; }
+.color.white { background-color: #ffffff; }
+.color.pink { background-color: #ff69b4; }
+.color.purple { background-color: #800080; }
+.color.magenta { background-color: #ff00ff; }
+.color.orange {background-color: orange;}
+.color.bege {background-color: beige;}
+.color.a5thar {background-color: hsl(120, 77%, 14%);}
+.color.azra9 { background-color: #6e6ed4;}
+.color.asfar {background-color: rgb(196, 196, 28);}
+
+
+
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.star {
+    font-size: 1.5em;
+    color: #ffd700; /* Gold color for stars */
+    margin-right: 4px;
+    margin-bottom: 10px
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .clothing-container {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.filter-bar {
+    margin: 20px 0;
+}
+
+.filter-bar label {
+    margin-right: 20px;
+}
