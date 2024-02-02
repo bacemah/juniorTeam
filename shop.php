@@ -8,16 +8,14 @@
 </head>
 <body>
 
-    <header>
-        <h1>Coats</h1>
-    </header>
+    
 
     <div class="filter-bar">
         <form action="search.php" method="POST">
             <label><input type="radio" name="category" value="All" checked> All</label>
-            <label><input type="radio" name="category" value="T-Shirts"> T-Shirts</label>
-            <label><input type="radio" name="category" value="Jeans"> Jeans</label>
-            <label><input type="radio" name="category" value="Sneakers"> Sneakers</label>
+            <label><input type="radio" name="category" value="Jeans">Jeans</label>
+            <label><input type="radio" name="category" value="Heels"> Heels</label>
+            <label><input type="radio" name="category" value="Dresses">Dresses</label>
             <label><input type="radio" name="category" value="Coats"> Coats</label>
             <input type="submit" name="submit">
         </form>
@@ -30,7 +28,7 @@
         die("no connection");
        }
 
-    $query = "SELECT * FROM clothing_items ";
+    $query = "SELECT * FROM clothing_items WHERE rating=5";
 
     $result = $conn->query($query);
 

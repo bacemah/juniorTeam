@@ -81,7 +81,7 @@ header {
 
 .color.red { background-color: #ff0000; }
 .color.blue { background-color: #0000ff; }
-.color.green { background-color: #00ff00; }
+.color.green { background-color: hsl(120, 56%, 30%); }
 .color.black { background-color: #000000; }
 .color.gray { background-color: #808080; }
 .color.white { background-color: #ffffff; }
@@ -93,6 +93,7 @@ header {
 .color.a5thar {background-color: hsl(120, 77%, 14%);}
 .color.azra9 { background-color: #6e6ed4;}
 .color.asfar {background-color: rgb(196, 196, 28);}
+.color.color.purple {background-color: #800080;}
 
 
 
