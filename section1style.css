@@ -20,6 +20,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -27,14 +28,13 @@ body {
   font-weight: 300;
   color: #444;
   line-height: 1.9;
-  background-color: #d3d3d3;
+  background-color: #b3b3b3;
 }
 
 p {
   color: #666;
 }
 .header__title {
-  flex: 1;
   max-width: 100%;
   max-height: 120%;
   height: 45rem;
@@ -42,7 +42,7 @@ p {
   background-size: 100vw; /*cover*/
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: top center;
+  background-position: top 50%;
   width: 100%;
   position: relative;
   text-align: left;
@@ -51,10 +51,13 @@ p {
   justify-content: center;
   padding-left: 10%;
 }
-
+.comfort {
+  display: inline-block;
+  max-height: 100rem;
+  max-width: 100rem;
+}
 .header__text {
-  margin: 0;
-  z-index: 3;
+  max-height: 25rem;
 }
 
 h1 {
@@ -72,6 +75,161 @@ h4 {
   opacity: 0;
   transform: translateY(8rem);
 }
+.navigator.sticky {
+  position: fixed;
+  background-color: #333333;
+}
+.navigator {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: #333333; /*#333333 #708090 #b3b3b3 #9e9e9e*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  opacity: 0.9;
+}
+.logo {
+  margin-left: -60px;
+}
+.nav a {
+  position: relative;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.nav a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background-color: #cac4b9;
+  transition: 0.5s;
+}
+
+.nav a:hover::before {
+  width: 100%;
+}
+#section--2 {
+  margin-top: 200px;
+}
+#section--3 {
+  margin-top: 15rem;
+}
+.search {
+  width: 100%;
+  max-width: 700px;
+  background: color (255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+  backdrop-filter: blur(4px) saturate(180%);
+}
+
+.search input {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+  color: #cac7ff;
+}
+
+::placeholder {
+  color: #cac7ff;
+}
+.search button img {
+  width: 25px;
+}
+.search button {
+  border: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #58629b;
+  cursor: pointer;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  background-color: #333333;
+  padding: 70px 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #cac4b9;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #d3d3d3;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
 .btn--text {
   display: inline-block;
   background: none;
@@ -88,12 +246,14 @@ h4 {
   z-index: 3;
   max-width: 20rem;
 }
-
-.highlight {
+.hea .highlight {
   position: relative;
   z-index: 2;
+  max-width: 23.8rem;
 }
-
+.highlight.chic {
+  max-width: 13.8rem;
+}
 .highlight::after {
   display: block;
   content: "";
@@ -109,10 +269,10 @@ h4 {
 }
 .category-btn {
   position: absolute;
-  bottom: 35%;
   text-align: center;
   width: 100%;
   opacity: 0.8;
+  bottom: 20%;
 }
 .product-box {
   transition: all 0.5s ease-in-out;
@@ -131,6 +291,10 @@ h4 {
 .hidden {
   visibility: hidden;
   opacity: 0;
+}
+.section_title {
+  text-align: center;
+  margin-bottom: 8rem;
 }
 .categories {
   position: relative;
