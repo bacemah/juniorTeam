@@ -37,8 +37,8 @@ p {
 .header__title {
   max-width: 100%;
   max-height: 120%;
-  height: 45rem;
-  background-image: url(img/header-removebg.jpg);
+  height: 100vh;
+  background-image: url(img/newheader.png);
   background-size: 100vw; /*cover*/
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -51,13 +51,18 @@ p {
   justify-content: center;
   padding-left: 10%;
 }
-.comfort {
-  display: inline-block;
-  max-height: 100rem;
-  max-width: 100rem;
+.comfort-or {
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
+
+.comfort-or div {
+  margin-right: 2rem;
+}
+
 .header__text {
-  max-height: 25rem;
+  margin-top: 50px;
 }
 
 h1 {
@@ -118,7 +123,7 @@ h4 {
   width: 100%;
 }
 #section--2 {
-  margin-top: 200px;
+  margin-top: 2rem;
 }
 #section--3 {
   margin-top: 15rem;
@@ -335,11 +340,12 @@ ul {
   display: block;
 }
 .img-fluid1 {
-  max-width: 100rem;
+  max-width: 70rem;
   max-height: 100rem;
-  height: 100rem;
+  height: 50rem;
   width: 70rem;
   position: relative;
+  border-radius: 10%;
 }
 .img-fluid {
   max-width: 100%;
