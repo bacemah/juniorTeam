@@ -1,8 +1,8 @@
 :root {
   --gradient-primary: linear-gradient(
-    to bottom right,
-    #5b7e91,
-    #fed1bd
+    to right bottom,
+    #bcccdc,
+    #5a7a8e
   ); /*#008080/#ff7f50 or */
   --color-primary: #211c1d;
   --color-secondary: #f1e2ad;
@@ -38,7 +38,7 @@ p {
   max-width: 100%;
   max-height: 120%;
   height: 100vh;
-  background-image: url(img/newheader.png);
+  background-image: url(img/header1.png);
   background-size: 100vw; /*cover*/
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -102,7 +102,7 @@ h4 {
 .nav a {
   position: relative;
   font-size: 18px;
-  color: white;
+  color: #dddddd;
   font-weight: 500;
   text-decoration: none;
   margin-left: 40px;
@@ -185,7 +185,7 @@ ul {
 }
 .footer-col h4 {
   font-size: 18px;
-  color: #cac4b9;
+  color: #dddddd;
   text-transform: capitalize;
   margin-bottom: 35px;
   font-weight: 500;
@@ -268,7 +268,7 @@ ul {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: 0.2;
+  opacity: 0.45;
   transform: scale(1.07, 1.05) skewX(-15deg);
   background-image: var(--gradient-primary);
 }
@@ -300,6 +300,7 @@ ul {
 .section_title {
   text-align: center;
   margin-bottom: 8rem;
+  color: #333333;
 }
 .categories {
   position: relative;

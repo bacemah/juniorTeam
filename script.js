@@ -6,6 +6,7 @@ const header = document.querySelector(".header");
 const buttons1 = document.querySelectorAll(".btn1");
 const test = document.querySelectorAll("div.category-btn");
 const navBar = document.querySelector(".navigator");
+const headerTitle = document.querySelector(".header__title");
 let currentTab = 0;
 const maxTab = tabs.length;
 navBar.addEventListener("mouseover", function (e) {
@@ -46,6 +47,7 @@ const switchTab = function (nextTab) {
   tabsContent.forEach((c) => c.classList.remove("categories__content--active"));
   tabs[nextTab].classList.add("categories__tab--active");
   tabsContent[nextTab].classList.add("categories__content--active");
+  AOS.refresh();
 };
 tabsContainer.addEventListener("click", function (e) {
   const clicked = e.target.closest(".categories__tab");
@@ -95,3 +97,12 @@ const buttonObserver = new IntersectionObserver(btnObs, {
 test.forEach(function (btn) {
   buttonObserver.observe(btn);
 });
+let currentBg = 0;
+const nextBg = function () {
+  headerTitle.style.backgroundImage = `url('img/header${currentBg + 1}.png')`;
+  currentBg++;
+};
+const changeTiming = setInterval(function () {
+  if (currentBg === 3) currentBg = 0;
+  nextBg();
+}, 5500);
