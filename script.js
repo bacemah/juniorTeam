@@ -33,8 +33,12 @@ navBar.addEventListener("mouseout", function (e) {
 });
 const navObs = function (entries) {
   const [entry] = entries;
-  if (!entry.isIntersecting) navBar.classList.add("sticky");
-  else navBar.classList.remove("sticky");
+  if (!entry.isIntersecting) {
+    navBar.classList.add("sticky");
+    navBar.style.height = "5rem";
+    navBar.addEventListener("mouseover", () => (navBar.style.height = "8rem"));
+    navBar.addEventListener("mouseout", () => (navBar.style.height = "5rem"));
+  } else navBar.classList.remove("sticky");
 };
 const navObserver = new IntersectionObserver(navObs, {
   root: null,
@@ -59,6 +63,7 @@ const tabInterval = setInterval(() => {
   currentTab = (currentTab + 1) % maxTab;
   switchTab(currentTab);
 }, 6000);
+tabsContainer.addEventListener("click", () => clearInterval(tabInterval));
 const sectionObs = function (entries, observer) {
   const [entry] = entries;
   if (!entry.isIntersecting) return;
