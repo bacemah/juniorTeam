@@ -214,5 +214,67 @@
         </div>
       </div>
     </section>
+     <div class="gallery-wrap"  >
+        <img id ="prev" src="prev.png">
+        <div class="gallery">
+            <div>
+                <span class="container">
+                    <img src="90s.jpg" class="image">
+                    <span class="overlay">21.99€</span>
+                </span>
+                <span class="container">
+                    <img src="90s1.jpg" class="image" >
+                    <span class="overlay">11.55€</span>
+                </span>
+                <span class="container">
+                    <img src="90s2.jpg" class="image" >
+                    <span class="overlay">17.86€</span>
+                </span>
+                <span class="container">
+                    <img src="90s3.jpg" class="image" >
+                    <span class="overlay">7.99€</span>
+                </span>
+                <span class="container">
+                    <img src="90s4.jpg" class="image" >
+                    <span class="overlay">18.99€</span>
+                </span>
+                <span class="container">
+                    <img src="90s5.jpg" class="image" >
+                    <span class="overlay">15€</span>
+                </span>
+            
+        </div>
+        <div>
+            <span class="container">
+                <img src="90s6.jpg" class="image">
+                <span class="overlay">13.75€</span>
+            </span>
+            <span class="container">
+                <img src="90s7.jpg"  class="image">
+                <span class="overlay">6.53€</span>
+            </span>
+            <span class="container" >
+                <img src="90s8.jpg">
+                <span class="overlay">18.45€</span>
+            </span>
+        
+            <span class="container">
+                <img src="90s9.jpg" class="image">
+                <span class="overlay">14.99€</span>
+            </span>
+            <span class="container">
+                <img src="90s10.jpg" class="image">
+                <span class="overlay">9.99€</span>
+            </span>
+            <span class="container">
+                <img src="90s11.jpg" class="image">
+                <span class="overlay">14.63€</span>
+            </span>
+        
+    </div>
+        
+    </div>
+    <img  id="next" src="suiv.png">
+    </div>
   </body>
 </html>
