@@ -62,13 +62,80 @@
 
 
         <!-- section 3 -->
+        <div class="navigation">
+        <div id ="casual"><button>Casual</button></div>
+        <div id ="vintage"><button>Vintage</button></div>
+        <div id ="90's"> <button>90's</button></div>
+    </div>
+        <div class="gallery-wrap"   >
+        <img id ="prev" src="prev.png">
+        <div class="gallery">
+            <div>
+                <span class="containers">
+                    <img src="casual.jpg" class="image">
+                    <span class="overlay">16,59€</span>
+                </span>
+                <span class="containers">
+                    <img src="casual1.jpg" class="image" >
+                    <span class="overlay">17,99€</span>
+                </span>
+                <span class="containers">
+                    <img src="casual2.jpg" class="image" >
+                    <span class="overlay">17,49€</span>
+                </span>
+                <span class="containers">
+                    <img src="casual3.jpg" class="image" >
+                    <span class="overlay">15dt</span>
+                </span>
+                <span class="containers">
+                    <img src="casual4.jpg" class="image" >
+                    <span class="overlay">7,99€</span>
+                </span>
+                <span class="containers">
+                    <img src="casual5.jpg" class="image" >
+                    <span class="overlay">15.55€</span>
+                </span>
+            
+        </div>
+        <div>
+            <span class="containers">
+                <img src="casual6.jpg" class="image">
+                <span class="overlay">9.99€</span>
+            </span>
+            <span class="containers">
+                <img src="casual7.jpg"  class="image">
+                <span class="overlay">8.99€</span>
+            </span>
+            <span class="containers" >
+                <img src="casual8.jpg">
+                <span class="overlay">12.05€</span>
+            </span>
         
+            <span class="containers">
+                <img src="casual9.jpg" class="image">
+                <span class="overlay">16.55€</span>
+            </span>
+            <span class="containers">
+                <img src="casual10.jpg" class="image">
+                <span class="overlay">12.99€</span>
+            </span>
+            <span class="containers">
+                <img src="casual11.jpg" class="image">
+                <span class="overlay">14.88€</span>
+            </span>
+        
+    </div>
+        
+    </div>
+    <img  id="next" src="suiv.png">
+    </div>
+    
 
 
 
     </div>
      <footer class="footer">
-        <div class="container"> 
+        <div class="containers"> 
             <div class="row">
                 <div class="footer-col">
                     <h4>company</h4>
