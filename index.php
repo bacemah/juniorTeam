@@ -22,6 +22,8 @@
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/9ce2115d23.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style.css" />
     <title>document</title>
     <script
@@ -37,7 +39,7 @@
           <a class="nav_link" href="#">Home</a>
           <a href="#"
             ><i
-              class="fa-regular fa-user fa-flip-horizontal fa-sm nav_link"
+              class="fa-solid fa-heart fa-sm nav_link"
               style="color: #dddddd"
             ></i
           ></a>
