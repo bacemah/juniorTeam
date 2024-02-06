@@ -28,11 +28,44 @@
             <a href="#"><i class="fa-regular fa-user fa-flip-horizontal fa-sm" style="color: #cac4b9;"></i></a>
             <a href="#"><i class="fa-solid fa-bag-shopping fa-sm" style="color: #cac4b9;"></i></a>
         </nav>
-        
-
-        
-
     </header>
+        
+
+
+        <!-- section 1 -->
+
+
+
+
+
+
+
+
+
+
+        <!-- section 2 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- section 3 -->
+        
+
+
+
     </div>
      <footer class="footer">
         <div class="container"> 
