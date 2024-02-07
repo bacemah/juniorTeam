@@ -28,9 +28,17 @@
         die("no connection");
        }
 
-    $query = "SELECT * FROM clothing_items WHERE rating=5";
+    $gender = $_POST["gender"] ;
 
-    $result = $conn->query($query);
+    $stmt = $conn->prepare("SELECT * FROM clothing_items ci 
+                                INNER JOIN gender g  ON ci.gender_id = g.id 
+                                WHERE g.gender = ?");
+
+    $stmt->bind_param("s", $gender);
+    $stmt->execute();
+
+    
+    $result = $stmt->get_result();
 
     while ($row = $result->fetch_assoc()) {
         echo '<div class="clothing-item">';
