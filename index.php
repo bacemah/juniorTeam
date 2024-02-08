@@ -193,6 +193,16 @@
         .
       </div>
     </section>
+    <div class="video">
+      <div class="over-video">
+        <img src="img/logo2.png" >
+        <button type="button" class="btn btn-light">Get The Look &rarr;</button>
+      </div>
+      <video loop autoplay muted>
+        <source src="img/Vidéo sans titre ‐ Réalisée avec Clipchamp (1).mp4" type="video/mp4">
+      </video>
+    </div>
+    </section>
     <section class="section" id="section--3">
       <h1 class="section_title" data-aos="zoom-in-down" data-aos-duration="2000">Get the look</h1>
       <div class="categories">
