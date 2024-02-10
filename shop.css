@@ -1,42 +1,244 @@
-body {
-    font-family: Arial, sans-serif;
-    margin-bottom: 40px;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    display: flex;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d3d3d3;
     min-height: 100vh;
+    
+}
+
+header{
+    position: absolute ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
+}
+ .logo{
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5 rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+ }
+
+ .group {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+ }
+header ul {
+
+    position: relative;
+    display: flex;
+    gap: 30px;
+
+}
+
+header ul li {
+    list-style: none; 
+}
+
+header ul li a 
+{
+    position: relative;
+    text-decoration: none;
+    font-size: 1em;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+header ul li a::before {
+    content : '' ;
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: #333;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+
+header ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+
+}
+
+
+header .search {
+    position: relative;
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-color: #d3d3d3;
+    font-size: 1.5em;
+    z-index: 10;
+    cursor: pointer;
 }
 
-header {
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 50px;
-    background-color: #333;
-    color: white;
+
+.filter-bar{
+    position: absolute;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #fff;
+    align-items: center;
+    padding: 0 30px;
+    transition: 0.5s ease-in-out;
 }
 
+.filter-bar.active{
+    right: 0;
+
+}
+
+.filter-bar input {
+    margin-left: 60px;
+    margin-right: 60px;
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 50px;
+    font-size: 1.25em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    
+}
+
+.searchbtn {
+    position: relative;
+    left: 30px;
+    top: 2.5px;
+    transition: 0.5s ease-in-out;
+
+}
+.searchbtn.active {
+    left: 0;
+
+}
+
+
+.closebtn{
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.closebtn.active {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+    scale: 1;
+
+}
+
+.menutoggle {
+    position: relative;
+    display: none;
+}
+
+@media(max-width :800px)
+{   .searchbtn{
+    left: 0;
+
+    }
+
+
+    .menutoggle{
+        position:absolute;
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+        transform: translateX(30px);
+        z-index: 10;
+
+    }
+
+    header .navigation
+    {
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+      left: 100%;
+    }
+
+    header.open .navigation {
+        top: 80px;
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        width: 100%;
+        height: calc(100vh - 80px) ;
+        padding: 40px;
+        border-top: 1px solid rgba(0, 0, 0, 0.5) ;
+        
+
+    }
+
+    header.open .navigation li a {
+        font-size:1.25em ;
+    }
+    .hide{
+        display: none;
+    }
+
+
+
+}
+
+/* Clothing container styles */
+.displayed_itmes{
+    position: relative;
+    top: 80px;
+    height: 200%;
+}
+.all-items{
+    position: relative;
+    top: 80px;
+    height: 200%;
+
+}
 .clothing-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 40px;
     padding: 20px;
-    max-width: 1200px; 
-    justify-items: center;
+    max-width: 1200px;
+    justify-items: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    margin: 0 auto; /* Center the container itself */
 }
 
 .clothing-item {
     position: relative;
-    border: 2px solid #d3d3d3 ;
+    border: 2px solid #d3d3d3;
     border-radius: 10px;
     overflow: hidden;
     padding: 10px;
     text-align: center;
     transition: transform 0.3s ease-in-out;
     background-color: #faf9f6;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
 
 .clothing-item:hover {
@@ -45,23 +247,21 @@ header {
 
 .heart-icon {
     position: absolute;
-    bottom: 115px;
+    bottom: 125px;
     left: 10%;
     transform: translateX(-50%);
     font-size: 1.5em;
     color: hsl(0, 43%, 54%);
     cursor: pointer;
 }
-.heart-icon:hover{
-    color: hsl(0, 78%, 52%);
 
+.heart-icon:hover {
+    color: hsl(0, 78%, 52%);
 }
 
 .clothing-item img {
-    width:  100% ;
+    width: 100%;
     height: 400px;
-    
-    
 }
 
 .colors {
@@ -88,15 +288,12 @@ header {
 .color.pink { background-color: #ff69b4; }
 .color.purple { background-color: #800080; }
 .color.magenta { background-color: #ff00ff; }
-.color.orange {background-color: orange;}
-.color.bege {background-color: beige;}
-.color.a5thar {background-color: hsl(120, 77%, 14%);}
-.color.azra9 { background-color: #6e6ed4;}
-.color.asfar {background-color: rgb(196, 196, 28);}
-.color.color.purple {background-color: #800080;}
-
-
-
+.color.orange { background-color: orange; }
+.color.bege { background-color: beige; }
+.color.a5thar { background-color: hsl(120, 77%, 14%); }
+.color.azra9 { background-color: #6e6ed4; }
+.color.asfar { background-color: rgb(196, 196, 28); }
+.color.color.purple { background-color: #800080; }
 
 .rating {
     display: flex;
@@ -104,29 +301,16 @@ header {
     justify-content: center;
 }
 
-
 .star {
     font-size: 1.5em;
     color: #ffd700; /* Gold color for stars */
     margin-right: 4px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
-
-
-
-
-
+/* Responsive styles */
 @media (max-width: 600px) {
     .clothing-container {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
-}
-
-.filter-bar {
-    margin: 20px 0;
-}
-
-.filter-bar label {
-    margin-right: 20px;
 }
