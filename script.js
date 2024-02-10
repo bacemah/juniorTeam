@@ -1,4 +1,4 @@
-let scrollContainer=document.querySelectorAll(".gallery");
+let scrollContainer=document.querySelectorAll("gallery");
     
 let prev=document.getElementById("prev");
 let next=document.getElementById("next");
@@ -219,3 +219,29 @@ minusBtn.addEventListener("click", function () {
     qteForm.value = `${qte}`;
   }
 });
+
+
+
+
+var TrandingSlider = new Swiper('.tranding-slider', {
+    effect: 'coverflow' ,
+    grabCursor: true,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 5 ,
+    coverflowEffect: {
+        rotate: 0 ,
+        stretch: 0 ,
+        depth: 100 ,
+        modifier: 2.5 ,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true ,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
+}
+);

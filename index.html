@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,12 +29,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+       <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <title>document</title>
     <script
       src="https://kit.fontawesome.com/54a4ae632a.js"
       crossorigin="anonymous"
     ></script>
     <script defer src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body>
   <header class="header">
@@ -210,38 +214,41 @@
 
           <!-- section 2 -->
         <section id="tranding">
-        <div class="container">
-            <h3 class="text-center section-subheading">FASHION</h3>
-            <h1 class="text-center section-heading">Trending Clothes</h1>
-        </div>
-        <div class="container">
-            <div class="swiper tranding-slider">
+          <div class="container">
+              <h3 class="text-center section-subheading">FASHION</h3>
+              <h1 class="text-center section-heading">Trending Clothes</h1>
+          </div>
+          <div cxlass="container">
+
+              <div class="swiper tranding-slider">
+
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide tranding-slide">
-                        <div class="tranding-slide-img">
-                            <img src="IMAGE-landscape-default-fill-6036e701-f3a8-4145-af1f-1b11cc90b1af-default_0.jpg" alt="image1">
-                        </div>
-                        <div class="tranding-slide-conte
-                            <h1 class="food-price">$500</h1>
-                            <div class="tranding-slide-content-bottom">
-                                <h2 class="food-name">Jacket</h2>
-                                 <h3 class="food-rating">
-                                    <span>4.5</span>
-                                    <div class="rating">
-                                      <ion-icon name="star"></ion-icon>
-                                      <ion-icon name="star"></ion-icon>
-                                      <ion-icon name="star"></ion-icon>
-                                       <ion-icon name="star"></ion-icon>
-                                       <ion-icon name="star"></ion-icon>
-                                    </div>
-                                
-                                 </h3>
+
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">                      
+                        <img src="IMAGE-landscape-default-fill-6036e701-f3a8-4145-af1f-1b11cc90b1af-default_0.jpg" alt="image1">
+                    </div>
+                    <div class="tranding-slide-conte">
+                      <h1 class="food-price">$500</h1>
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="food-name">Jacket</h2>
+                          <h3 class="food-rating">
+                            <span>4.5</span>
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
                             </div>
+                                
+                          </h3>
                         </div>
                     </div>
+                  </div>
 
 
-                    <div class="swiper-slide tranding-slide">
+                  <div class="swiper-slide tranding-slide">
                         <div class="tranding-slide-img">
                             <img src="ph1.avif" alt="image1">
                         </div>
@@ -262,8 +269,9 @@
                                  </h3>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide tranding-slide">
+                  </div>
+
+                  <div class="swiper-slide tranding-slide">
                         <div class="tranding-slide-img">
                             <img src="ph2.avif" alt="image1">
                         </div>
@@ -283,13 +291,14 @@
                                 
                                  </h3>
                             </div>
-                        </div>
+                          </div>
+                  </div>
+
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="ph8.jpeg" alt="image1">
                     </div>
-                    <div class="swiper-slide tranding-slide">
-                        <div class="tranding-slide-img">
-                            <img src="ph8.jpeg" alt="image1">
-                        </div>
-                        <div class="tranding-slide-content">
+                    <div class="tranding-slide-content">
                             <h1 class="food-price">$188</h1>
                             <div class="tranding-slide-content-bottom">
                                 <h2 class="food-name">Sweater</h2>
@@ -305,250 +314,252 @@
                                 
                                  </h3>
                             </div>
-                        </div>
                     </div>
-                    <div class="swiper-slide tranding-slide">
-                        <div class="tranding-slide-img">
-                            <img src="ph9.jpg" alt="image1">
-                        </div>
-                        <div class="tranding-slide-content">
-                            <h1 class="food-price">$190</h1>
-                            <div class="tranding-slide-content-bottom">
-                                <h2 class="food-name">Sweater</h2>
-                                 <h3 class="food-rating">
-                                    <span>4.5</span>
-                                    <div class="rating">
-                                      <ion-icon name="star"></ion-icon>
-                                      <ion-icon name="star"></ion-icon>
-                                      <ion-icon name="star"></ion-icon>
-                                       <ion-icon name="star"></ion-icon>
-                                       <ion-icon name="star"></ion-icon>
-                                    </div>
-                                
-                                 </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide tranding-slide">
-                        <div class="tranding-slide-img">
-                            <img src="ph5.jpg" alt="image1">
-                        </div>
-                        <div class="tranding-slide-content">
-                            <h1 class="food-price">$200</h1>
-                            <div class="tranding-slide-content-bottom">
-                                <h2 class="food-name">Sweater</h2>
-                                 <h3 class="food-rating">
-                                    <span>4.5</span>
-                                    <div class="rating">
-                                      <ion-icon name="star"></ion-icon>
-                                      <ion-icon name="star"></ion-icon>
-                                      <ion-icon name="star"></ion-icon>
-                                       <ion-icon name="star"></ion-icon>
-                                       <ion-icon name="star"></ion-icon>
-                                    </div>
-                                
-                                 </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide tranding-slide">
-                        <div class="tranding-slide-img">
-                            <img src="ph6.jpg" alt="image1">
-                        </div>
-                        <div class="tranding-slide-content">
-                            <h1 class="food-price">$140</h1>
-                            <div class="tranding-slide-content-bottom">
-                                <h2 class="food-name">Sweater</h2>
-                                 <h3 class="food-rating">
-                                    <span>4.5</span>
-                                    <div class="rating">
-                                      <ion-icon name="star"></ion-icon>
-                                      <ion-icon name="star"></ion-icon>
-                                      <ion-icon name="star"></ion-icon>
-                                       <ion-icon name="star"></ion-icon>
-                                       <ion-icon name="star"></ion-icon>
-                                    </div>
-                                
-                                 </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide tranding-slide">
-                        <div class="tranding-slide-img">
-                            <img src="ph10.webp" alt="image1">
-                        </div>
-                        <div class="tranding-slide-content">
-                            <h1 class="food-price">$210</h1>
-                            <div class="tranding-slide-content-bottom">
-                                <h2 class="food-name">Jeans</h2>
-                                 <h3 class="food-rating">
-                                    <span>4.5</span>
-                                    <div class="rating">
-                                      <ion-icon name="star"></ion-icon>
-                                      <ion-icon name="star"></ion-icon>
-                                      <ion-icon name="star"></ion-icon>
-                                       <ion-icon name="star"></ion-icon>
-                                       <ion-icon name="star"></ion-icon>
-                                    </div>
-                                
-                                 </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide tranding-slide">
-                        <div class="tranding-slide-img">
-                            <img src="ph13.webp" alt="image1">
-                        </div>
-                        <div class="tranding-slide-content">
-                            <h1 class="food-price">$350</h1>
-                            <div class="tranding-slide-content-bottom">
-                                <h2 class="food-name">Jacket</h2>
-                                 <h3 class="food-rating">
-                                    <span>4.5</span>
-                                    <div class="rating">
-                                      <ion-icon name="star"></ion-icon>
-                                      <ion-icon name="star"></ion-icon>
-                                      <ion-icon name="star"></ion-icon>
-                                       <ion-icon name="star"></ion-icon>
-                                       <ion-icon name="star"></ion-icon>
-                                    </div>
-                                
-                                 </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide tranding-slide">
-                        <div class="tranding-slide-img">
-                            <img src="photo11.jpg" alt="image1">
-                        </div>
-                        <div class="tranding-slide-content">
-                            <h1 class="food-price">$450</h1>
-                            <div class="tranding-slide-content-bottom">
-                                <h2 class="food-name">Jacket</h2>
-                                 <h3 class="food-rating">
-                                    <span>4.5</span>
-                                    <div class="rating">
-                                      <ion-icon name="star"></ion-icon>
-                                      <ion-icon name="star"></ion-icon>
-                                      <ion-icon name="star"></ion-icon>
-                                       <ion-icon name="star"></ion-icon>
-                                       <ion-icon name="star"></ion-icon>
-                                    </div>
-                                
-                                 </h3>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
 
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="ph9.jpg" alt="image1">
+                    </div>
+                    <div class="tranding-slide-content">
+                        <h1 class="food-price">$190</h1>
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="food-name">Sweater</h2>
+                          <h3 class="food-rating">
+                            <span>4.5</span>
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                                
+                          </h3>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="ph5.jpg" alt="image1">
+                    </div>
+                    <div class="tranding-slide-content">
+                        <h1 class="food-price">$200</h1>
+                        <div class="tranding-slide-content-bottom">
+                          <h2 class="food-name">Sweater</h2>
+                          <h3 class="food-rating">
+                              <span>4.5</span>
+                              <div class="rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                              </div>
+                          </h3>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="ph6.jpg" alt="image1">
+                    </div>
+                    <div class="tranding-slide-content">
+                      <h1 class="food-price">$140</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="food-name">Sweater</h2>
+                        <h3 class="food-rating">
+                          <span>4.5</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+                                
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="ph10.webp" alt="image1">
+                    </div>
+                    <div class="tranding-slide-content">
+                      <h1 class="food-price">$210</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="food-name">Jeans</h2>
+                        <h3 class="food-rating">
+                          <span>4.5</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>     
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="ph13.webp" alt="image1">
+                    </div>
+                    <div class="tranding-slide-content">
+                      <h1 class="food-price">$350</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="food-name">Jacket</h2>
+                        <h3 class="food-rating">
+                          <span>4.5</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="photo11.jpg" alt="image1">
+                    </div>
+                    <div class="tranding-slide-content">
+                      <h1 class="food-price">$450</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="food-name">Jacket</h2>
+                        <h3 class="food-rating">
+                          <span>4.5</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
 
                 </div>
-                <div class="tranding-slide-control">
-                    
-                    <div class="swipper-button-prev slider-arrow">
-                        <ion-icon name="arrow-back-outline"></ion-icon>
-                    </div>
-                    <div class="swipper-button-next slider-arrow">
-                        <ion-icon name="arrow-forward-outline"></ion-icon>
-                    </div>
-                    <div class="swiper-pagination"></div>
+
+                <div class="tranding-slide-control">                    
+                  <div class="swipper-button-prev slider-arrow">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                  </div>
+                  <div class="swipper-button-next slider-arrow">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </div>
+                <div class="swiper-pagination"></div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="style.js"></script>
+              </div>
+          </div>
+        </section>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- section 3 -->
-        <div class="navigation">
-        <div id ="casual"><button>Casual</button></div>
-        <div id ="vintage"><button>Vintage</button></div>
-        <div id ="90's"> <button>90's</button></div>
-    </div>
-        <div class="gallery-wrap"   >
-        <img id ="prev" src="prev.png">
-        <div class="gallery">
-            <div>
-                <span class="containers">
-                    <img src="casual.jpg" class="image">
-                    <span class="overlay">16,59€</span>
-                </span>
-                <span class="containers">
-                    <img src="casual1.jpg" class="image" >
-                    <span class="overlay">17,99€</span>
-                </span>
-                <span class="containers">
-                    <img src="casual2.jpg" class="image" >
-                    <span class="overlay">17,49€</span>
-                </span>
-                <span class="containers">
-                    <img src="casual3.jpg" class="image" >
-                    <span class="overlay">15dt</span>
-                </span>
-                <span class="containers">
-                    <img src="casual4.jpg" class="image" >
-                    <span class="overlay">7,99€</span>
-                </span>
-                <span class="containers">
-                    <img src="casual5.jpg" class="image" >
-                    <span class="overlay">15.55€</span>
-                </span>
-            
-        </div>
-        <div>
-            <span class="containers">
-                <img src="casual6.jpg" class="image">
-                <span class="overlay">9.99€</span>
-            </span>
-            <span class="containers">
-                <img src="casual7.jpg"  class="image">
-                <span class="overlay">8.99€</span>
-            </span>
-            <span class="containers" >
-                <img src="casual8.jpg">
-                <span class="overlay">12.05€</span>
-            </span>
-        
-            <span class="containers">
-                <img src="casual9.jpg" class="image">
-                <span class="overlay">16.55€</span>
-            </span>
-            <span class="containers">
-                <img src="casual10.jpg" class="image">
-                <span class="overlay">12.99€</span>
-            </span>
-            <span class="containers">
-                <img src="casual11.jpg" class="image">
-                <span class="overlay">14.88€</span>
-            </span>
-        
-    </div>
-        
-    </div>
-    <img  id="next" src="suiv.png">
-    </div> 
-    </div>
-    </section>
 
     
-    <section class="section" id="section--3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- section 3
+      <section>  
+        <div class="navigation">
+          <div id ="casual"><button>Casual</button></div>
+          <div id ="vintage"><button>Vintage</button></div>
+          <div id ="90's"> <button>90's</button></div>
+        </div>
+          <div class="gallery-wrap"   >
+            <img id ="prev" src="prev.png">
+            <div class="gallery">
+                  <div>
+                    <span class="containers">
+                      <img src="casual.jpg" class="image">
+                      <span class="overlay">16,59€</span>
+                    </span>
+                    <span class="containers">
+                      <img src="casual1.jpg" class="image" >
+                       <span class="overlay">17,99€</span>
+                    </span>
+                    <span class="containers">
+                      <img src="casual2.jpg" class="image" >
+                      <span class="overlay">17,49€</span>
+                    </span>
+                    <span class="containers">
+                      <img src="casual3.jpg" class="image" >
+                      <span class="overlay">15dt</span>
+                    </span>
+                    <span class="containers">
+                      <img src="casual4.jpg" class="image" >
+                      <span class="overlay">7,99€</span>
+                    </span>
+                    <span class="containers">
+                      <img src="casual5.jpg" class="image" >
+                      <span class="overlay">15.55€</span>
+                    </span>
+            
+                  </div>
+              <div>
+                <span class="containers">
+                  <img src="casual6.jpg" class="image">
+                  <span class="overlay">9.99€</span>
+                </span>
+                <span class="containers">
+                  <img src="casual7.jpg"  class="image">
+                  <span class="overlay">8.99€</span>
+                </span>
+                <span class="containers" >
+                  <img src="casual8.jpg">
+                  <span class="overlay">12.05€</span>
+                </span>
+        
+                <span class="containers">
+                  <img src="casual9.jpg" class="image">
+                  <span class="overlay">16.55€</span>
+                </span>
+                <span class="containers">
+                  <img src="casual10.jpg" class="image">
+                  <span class="overlay">12.99€</span>
+                </span>
+                <span class="containers">
+                  <img src="casual11.jpg" class="image">
+                  <span class="overlay">14.88€</span>
+                </span>
+              </div>
+            </div>
+            <img  id="next" src="suiv.png">
+          </div> 
+          </div>
+    </section> -->
+
+    
+    <!-- <section class="section" id="section--3">
       <h1 class="section_title" data-aos="zoom-in-down" data-aos-duration="2000">Get the look</h1>
       <div class="categories">
         <div class="categories__tab-container">
@@ -651,7 +662,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <footer class="footer">
       <div class="containers"> 
           <div class="row">
