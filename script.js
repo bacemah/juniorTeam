@@ -18,6 +18,30 @@ prev.addEventListener("click",()=>{
     scrollContainer[i].scrollLeft-=1500;
     scrollContainer[i].style.scrollBehavior="smooth";
 })};
+
+
+var TrandingSlider = new Swiper('.tranding-slider', {
+    effect: 'coverflow' ,
+    grabCursor: true,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 5 ,
+    coverflowEffect: {
+        rotate: 0 ,
+        stretch: 0 ,
+        depth: 100 ,
+        modifier: 2.5 ,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true ,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
+}
+);
 /*
 let casual=document.getElementById("casual");
 
@@ -35,26 +59,27 @@ s90.addEventListener("click", function() {
     window.open('/ed.html','_self');
 });
 */const tabsContainer = document.querySelector(".categories__tab-container");
-const tabsContent = document.querySelectorAll(".categories__content");
-const tabs = document.querySelectorAll(".categories__tab");
-const sections = document.querySelectorAll(".section");
-const header = document.querySelector(".header");
-const buttons1 = document.querySelectorAll(".btn1");
+const tabsContent = document.querySelectorAll("categories__content");
+const tabs = document.querySelectorAll("categories__tab");
+const sections = document.querySelectorAll("section");
+const header = document.querySelector("header");
+const buttons1 = document.querySelectorAll("btn1");
 const test = document.querySelectorAll("div.category-btn");
-const navBar = document.querySelector(".navigator");
-const headerTitle = document.querySelector(".header__title");
-const heartBtn = document.querySelector(".heart-btn");
-const heartModal = document.querySelector(".heart-modal");
-const overlay = document.querySelector(".overlay");
-const modalCart = document.querySelector(".modal-cart");
-const btnCloseModal = document.querySelector(".btn--close-modal");
-const btnsOpenModal = document.querySelector(".btn--show-modal");
-const qteForm = document.querySelector(".form-control");
-const plusBtn = document.querySelector(".plusBtn");
-const minusBtn = document.querySelector(".minusBtn");
+const navBar = document.getElementsByClassName("navigator");
+console.log(tabsContainer)
+const headerTitle = document.querySelector("header__title");
+const heartBtn = document.querySelector("heart-btn");
+const heartModal = document.querySelector("heart-modal");
+const overlay = document.querySelector("overlay");
+const modalCart = document.querySelector("modal-cart");
+const btnCloseModal = document.querySelector("btn--close-modal");
+const btnsOpenModal = document.querySelector("btn--show-modal");
+const qteForm = document.querySelector("form-control");
+const plusBtn = document.querySelector("plusBtn");
+const minusBtn = document.querySelector("minusBtn");
 let currentTab = 0;
 const maxTab = tabs.length;
-navBar.addEventListener("mouseover", function (e) {
+navBar[0].addEventListener("mouseover", function (e) {
   if (e.target.classList.contains("nav_link")) {
     const link = e.target;
     const sibling = link.closest(".navigator").querySelectorAll(".nav_link");
@@ -65,7 +90,7 @@ navBar.addEventListener("mouseover", function (e) {
     logo.style.opacity = 0.5;
   }
 });
-navBar.addEventListener("mouseout", function (e) {
+navBar[0].addEventListener("mouseout", function (e) {
   if (e.target.classList.contains("nav_link")) {
     const link = e.target;
     const sibling = link.closest(".navigator").querySelectorAll(".nav_link");
@@ -222,26 +247,3 @@ minusBtn.addEventListener("click", function () {
 
 
 
-
-var TrandingSlider = new Swiper('.tranding-slider', {
-    effect: 'coverflow' ,
-    grabCursor: true,
-    centeredSlides: true,
-    loop: true,
-    slidesPerView: 5 ,
-    coverflowEffect: {
-        rotate: 0 ,
-        stretch: 0 ,
-        depth: 100 ,
-        modifier: 2.5 ,
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true ,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    }
-}
-);
