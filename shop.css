@@ -175,6 +175,7 @@ header .search {
       opacity: 0;
       visibility: hidden;
       left: 100%;
+      z-index: 20;
     }
 
     header.open .navigation {
@@ -238,6 +239,7 @@ header .search {
     background-color: #faf9f6;
     margin-top: 20px;
     margin-bottom: 20px;
+    z-index: 10;
 
 }
 
