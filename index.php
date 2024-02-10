@@ -543,13 +543,11 @@
         
     </div>
     <img  id="next" src="suiv.png">
-    </div>
-        
-
-
-
+    </div> 
     </div>
     </section>
+
+    
     <section class="section" id="section--3">
       <h1 class="section_title" data-aos="zoom-in-down" data-aos-duration="2000">Get the look</h1>
       <div class="categories">
