@@ -64,7 +64,7 @@
             echo '<span class="color ' . $color . '"></span>';
         }
         echo '</div>';
-        echo '<p>' . $row['description'] . '</p>';
+        echo '<p>' . $row['price'] . '</p>';
         echo '<div class="rating">';
         for ($i = 0; $i < $row['rating']; $i++) {
            echo '<span class="star">&#9733;</span>';

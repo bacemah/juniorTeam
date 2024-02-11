@@ -29,7 +29,7 @@ if ($category === "") {
             $clothingItems .= '<span class="color ' . $color . '"></span>';
         }
         $clothingItems .= '</div>';
-        $clothingItems .= '<p>' . $row['description'] . '</p>';
+        $clothingItems .= '<p>' . $row['price'] . '</p>';
         $clothingItems .= '<div class="rating">';
         for ($i = 0; $i < $row['rating']; $i++) {
             $clothingItems .= '<span class="star">&#9733;</span>';
